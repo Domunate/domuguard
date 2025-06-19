@@ -11,7 +11,7 @@ const TrainingProgress = ({ sessionId }) => {
 
     useEffect(() => {
         // Initialize WebSocket connection
-        const websocket = new WebSocket(`ws://localhost:8000/api/v1/admin/ws/training-progress/${sessionId}`);
+        const websocket = new WebSocket(`ws://74.208.7.169:8000/api/v1/admin/ws/training-progress/${sessionId}`);
         
         websocket.onopen = () => {
             console.log('WebSocket connected');

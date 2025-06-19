@@ -30,7 +30,7 @@ export default function AuthTestPage() {
     
     try {
       // Test the token against the API
-      const response = await fetch('http://localhost:8000/api/v1/auth/me', {
+      const response = await fetch('http://74.208.7.169:8000/api/v1/auth/me', {
         headers: {
           'Authorization': `Bearer ${storedToken}`
         }

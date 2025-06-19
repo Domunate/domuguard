@@ -95,7 +95,7 @@ export default function AITrainingPage() {
 
         console.log('Sending request with body:', requestBody);
 
-        const response = await fetch('http://localhost:8000/api/v1/admin/get-adjusted-config', {
+        const response = await fetch('http://74.208.7.169:8000/api/v1/admin/get-adjusted-config', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -248,7 +248,7 @@ export default function AITrainingPage() {
         throw new Error('Authentication token not found in localStorage');
       }
 
-      const response = await fetch('http://localhost:8000/api/v1/admin/train-model', {
+      const response = await fetch('http://74.208.7.169:8000/api/v1/admin/train-model', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -326,7 +326,7 @@ export default function AITrainingPage() {
         throw new Error('Authentication token not found in localStorage');
       }
 
-      const response = await fetch('http://localhost:8000/api/v1/admin/stop-training', {
+      const response = await fetch('http://74.208.7.169:8000/api/v1/admin/stop-training', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

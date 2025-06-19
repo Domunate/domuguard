@@ -133,7 +133,7 @@ export default function DocumentProcessPage() {
 
       console.log('Sending request with token:', token.substring(0, 10) + '...'); // Log partial token for debugging
 
-      const response = await fetch('http://localhost:8000/api/v1/documents/process', {
+      const response = await fetch('http://74.208.7.169:8000/api/v1/documents/process', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
