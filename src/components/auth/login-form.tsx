@@ -21,7 +21,7 @@ export function LoginForm() {
     const password = formData.get("password") as string
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://74.208.7.169:8000';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://api.domunate.com';
       const formData = new URLSearchParams();
       formData.append('username', email); // FastAPI OAuth2 expects 'username' field
       formData.append('password', password);
