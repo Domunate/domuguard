@@ -1,6 +1,6 @@
 import { handleApiError } from "./error-handler"
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://74.208.7.169:8000"
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.domunate.com"
 
 interface ApiResponse<T> {
   data: T
